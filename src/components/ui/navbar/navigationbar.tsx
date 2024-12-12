@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/mode-trigger"
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -38,6 +39,10 @@ export function NavigationBar() {
                         Quiz
                     </NavigationMenuLink>
                 </Link>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+                <ModeToggle/>
             </NavigationMenuItem>
         </NavigationMenu>
     
