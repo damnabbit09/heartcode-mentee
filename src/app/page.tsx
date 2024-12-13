@@ -1,5 +1,7 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -16,15 +18,77 @@ export default function Home() {
             alt="saynotodrugs" 
             width={450} 
             height={600} 
-            className="rounded-lg shadow-lg h-[635px]" 
+            className="rounded-lg shadow-lg drop-shadow-xl h-[635px]" 
             objectPosition="center"
             objectFit="contain"/>
         </div>
       </div>
-      <div className="flex flex-col h-dvh mt-16">
-        <p className="py-4 px-12 text-xl font-semibold mt-20">Marijuana can affect your memory, concentration and lead to anxiety and paranoia!</p>
+      <div className="flex flex-col h-dvh">
+        {/* <p className="py-4 px-12 text-xl font-semibold mt-20">Marijuana can affect your memory, concentration and lead to anxiety and paranoia!</p>
         <p className="py-4 px-12 text-xl font-semibold">Cocaine increases heart rate and can cause heart problems that may result in death!</p>
-        <p className="py-4 px-12 text-xl font-semibold">Esctasy can increase body temperature and lead to serious health risks!</p>
+        <p className="py-4 px-12 text-xl font-semibold">Esctasy can increase body temperature and lead to serious health risks!</p> */}
+        <div className="flex flex-row px-8 space-x-6 mt-20 h-3/5">
+          <Card className="px-8 border-accent drop-shadow-md">
+            <CardHeader>
+              <CardTitle>
+                Marijuana
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              What it is: A drug made from the cannabis plant. It's sometimes used for relaxation or to get "high."
+            </CardContent>
+            <CardContent>
+              Effects: Affects memory, concentration, and motor skills. Can lead to anxiety or paranoia.
+            </CardContent>
+            <CardFooter>
+              <a href="https://nida.nih.gov/research-topics/cannabis-marijuana" target="_blank">
+                <Button>
+                  Find out more
+                </Button>
+              </a>
+            </CardFooter>
+          </Card>
+          <Card className="px-8 border-accent drop-shadow-md">
+            <CardHeader>
+              <CardTitle>
+              Cocaine
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              What it is: A powerful stimulant drug.
+            </CardContent>
+            <CardContent>
+              Effects: Increases heart rate, alertness, and energy but can lead to heart problems, anxiety, and addiction.
+            </CardContent>
+            <CardFooter>
+              <a href="https://nida.nih.gov/research-topics/cocaine" target="_blank">
+                <Button>
+                  Find out more
+                </Button>
+              </a>
+            </CardFooter>
+          </Card>
+          <Card className="px-8 border-accent drop-shadow-md">
+            <CardHeader>
+              <CardTitle>
+                Marijuana
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              What it is: A synthetic drug often used in parties and clubs.
+            </CardContent>
+            <CardContent>
+              Effects: Causes feelings of euphoria and closeness but can increase body temperature, leading to serious health risks.
+            </CardContent>
+            <CardFooter>
+            <a href="https://nida.nih.gov/research-topics/mdma-ecstasy-molly" target="_blank">
+                <Button>
+                  Find out more
+                </Button>
+              </a>
+            </CardFooter>
+          </Card>
+        </div>
       </div>
     </div>
   );
