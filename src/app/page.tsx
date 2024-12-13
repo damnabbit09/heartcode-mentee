@@ -55,7 +55,7 @@ export default function Home() {
         <p className="text-lg">
           Over 35 million people worldwide suffer from drug use disorders.
         </p>
-        <ul className="list-disc text-left mt-6 mx-auto w-2/3 space-y-2">
+        <ul className="list-disc text-left mt-6 mx-auto w-2/3 space-y-2 px-16">
           <li><b>Marijuana:</b> Used by over 192 million people globally, with a significant impact on youth and memory retention.</li>
           <li><b>Cocaine:</b> Affects over 20 million individuals, leading to severe health and legal consequences.</li>
           <li><b>MDMA/Ecstasy:</b> Popular among youth, with severe risks such as dehydration and organ failure.</li>
@@ -63,8 +63,8 @@ export default function Home() {
       </div>
 
       {/* Drug Cards Section */}
-      <div className="flex flex-col h-dvh">
-        <div className="flex flex-row px-8 space-x-6 mt-20 h-3/5">
+      <div className="flex flex-col py-16">
+        <div className="flex flex-row px-8 space-x-6 mt-5 h-3/5">
           {['Marijuana', 'Cocaine', 'MDMA/Ecstasy'].map((drug, index) => (
             <div key={drug} className={`animate-slideUp${index + 1}`}>
               <Card className="px-8 border-accent drop-shadow-md transition-transform duration-300 hover:scale-105">
@@ -101,7 +101,7 @@ export default function Home() {
       </div>
 
       {/* Call-to-Action Section */}
-      <div className="flex flex-col items-center px-8 mt-10 text-center">
+      <div className="flex flex-col items-center px-8 text-center mt-5">
         <h2 className="text-4xl font-bold mb-4">What Can You Do to Help?</h2>
         <p className="text-lg mb-6">
           Join the fight against drug abuse by spreading awareness, helping those in need, and making informed choices. Together, we can create a drug-free future!
@@ -118,7 +118,7 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <div className="bg-blue-100 py-8 mt-10">
-        <h2 className="text-3xl font-semibold text-center mb-6">Stories of Hope</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6 text-black">Stories of Hope</h2>
         <div className="flex flex-row justify-center space-x-6">
           <Card className="w-1/3">
             <CardHeader>
@@ -138,16 +138,6 @@ export default function Home() {
           </Card>
         </div>
       </div>
-
-      {/* Footer Section */}
-      <footer className="bg-gray-800 text-white py-6 mt-10 text-center">
-        <p>&copy; 2024 Anti-Drug Awareness. All Rights Reserved.</p>
-        <div className="flex justify-center space-x-6 mt-4">
-          <Link href="/about" className="hover:underline">About Us</Link>
-          <Link href="/contact" className="hover:underline">Contact</Link>
-          <Link href="/terms" className="hover:underline">Terms of Service</Link>
-        </div>
-      </footer>
     </div>
   );
 }
