@@ -40,6 +40,9 @@ export default function Home() {
             <CardContent>
               Effects: Affects memory, concentration, and motor skills. Can lead to anxiety or paranoia.
             </CardContent>
+            <CardContent>
+              Marijuana is most used in Canada and United States at 26% and about 22% respectively
+            </CardContent>
             <CardFooter>
               <a href="https://nida.nih.gov/research-topics/cannabis-marijuana" target="_blank">
                 <Button>
@@ -55,10 +58,15 @@ export default function Home() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              What it is: A powerful stimulant drug.
+              What it is: A powerful stimulant drug that affects the brain by
+               increasing dopamine levels, leading to intense feelings of euphoria,
+               energy, and alertness
             </CardContent>
             <CardContent>
               Effects: Increases heart rate, alertness, and energy but can lead to heart problems, anxiety, and addiction.
+            </CardContent>
+            <CardContent>
+              It is most used in the US and the UK at 2.7% and 2.67% respectively
             </CardContent>
             <CardFooter>
               <a href="https://nida.nih.gov/research-topics/cocaine" target="_blank">
