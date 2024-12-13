@@ -80,7 +80,7 @@ export default function Quiz() {
     }
 
     return (
-        <Card className="w-full max-w-2xl mx-auto">
+        <Card className="w-full max-w-2xl mx-auto border-accent">
             <CardHeader>
                 <CardTitle className="text-2xl font-bold">Q&A</CardTitle>
             </CardHeader>

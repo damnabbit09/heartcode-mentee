@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/com
 export default function AboutMe() {
     return (
         <div className="flex justify-around px-8 pt-12">
-            <Card className="w-2/5 h-36">
+            <Card className="w-2/5 h-36 border-accent">
                 <CardHeader>
                     <CardTitle>
                         SUPPPPPPP
@@ -16,7 +16,7 @@ export default function AboutMe() {
 
                 </CardHeader>
             </Card>
-            <Card className="w-2/5 h-36">
+            <Card className="w-2/5 h-36 border-accent">
                 <CardHeader>
                     <CardTitle>
                         HELLLOOOO
