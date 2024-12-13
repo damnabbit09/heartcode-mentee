@@ -71,7 +71,7 @@ export default function Home() {
           <Card className="px-8 border-accent drop-shadow-md">
             <CardHeader>
               <CardTitle>
-                Marijuana
+                MDMA/Ecstasy
               </CardTitle>
             </CardHeader>
             <CardContent>
