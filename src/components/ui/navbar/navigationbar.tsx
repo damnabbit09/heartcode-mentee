@@ -10,6 +10,7 @@ import {
     navigationMenuTriggerStyle,
     NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+import { SignInButton } from "@clerk/nextjs"
 import Link from "next/link"
 
 export function NavigationBar() {
@@ -42,8 +43,13 @@ export function NavigationBar() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
+                <SignInButton></SignInButton>
+            </NavigationMenuItem>
+            
+            <NavigationMenuItem>
                 <ModeToggle/>
             </NavigationMenuItem>
+
         </NavigationMenu>
     
     )
